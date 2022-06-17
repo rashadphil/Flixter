@@ -52,14 +52,12 @@
 
 - (void)setDateLabel {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    //uncomment to get the time only
-    //[formatter setDateFormat:@"hh:mm a"];
-    [formatter setDateFormat:@"MMM dd"];
+    [formatter setDateFormat:@"EEE, MMM dd"];
 
     //get the date today
     NSString *dateToday = [formatter stringFromDate:[NSDate date]];
 
-    [self.dateLabel setText:dateToday];
+    [self.dateLabel setText:[dateToday uppercaseString]];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -120,7 +118,6 @@
     cell.posterImage.image = [FlixtrViewController posterImgFromMovie:movie rowIndex:indexPath.row];
     
     // Change Cell UI
-    
     cell.contentView.layer.borderColor = [[UIColor blackColor] CGColor];
     cell.contentView.layer.borderWidth = 1;
     return cell;

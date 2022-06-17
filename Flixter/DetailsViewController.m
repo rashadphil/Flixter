@@ -15,9 +15,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *posterImage;
 @property (weak, nonatomic) IBOutlet UILabel *movieTitle;
 @property (weak, nonatomic) IBOutlet UILabel *movieSynopsis;
+@property (weak, nonatomic) IBOutlet UIButton *movieGenre;
+
 
 @property (nonatomic) NSInteger movieId;
 @property (nonatomic) NSString *trailerURL;
+
+@property (nonatomic, strong) NSDictionary *allGenres;
 
 
 @end
@@ -26,15 +30,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self buildGenreDict];
     
     self.movieTitle.text = self.movie[@"title"];
     self.movieSynopsis.text = self.movie[@"overview"];
     self.movieId = [self.movie[@"id"] integerValue];
-    [self.movieSynopsis sizeToFit];
+    self.headerImage.image = [self getBackdropImg];
+    [self.movieGenre setTitle:[self getMovieGenre] forState:UIControlStateNormal];
     
     [self setPosterImage];
-//    self.posterImage.image = [self getPosterImg];
-    self.headerImage.image = [self getBackdropImg];
+    
+    [self.movieSynopsis sizeToFit];
     
     [self fetchMovieTrailers:^(NSDictionary *dataDictionary) {
         NSDictionary *trailerInfo = (dataDictionary[@"results"])[0];
@@ -43,6 +49,10 @@
     } error:^(NSError *error) {
         
     }];
+}
+
+- (NSString *) getMovieGenre {
+    return self.allGenres[self.movie[@"genre_ids"][0]];
 }
 
 
@@ -115,9 +125,6 @@
            
         }];
         
-//        NSData *backdropData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[smallUrl stringByAppendingString:backdropPath]]];
-//        UIImage *backdropImage = [UIImage imageWithData:backdropData];
-//        self.headerImage.image = backdropImage;
     }
 }
 
@@ -147,6 +154,31 @@
     TrailerViewController *trailerVC = [segue destinationViewController];
     trailerVC.trailerUrl = self.trailerURL;
 }
+
+- (void)buildGenreDict {
+    self.allGenres = @{
+        @28: @"Action",
+        @12: @"Adventure",
+        @16: @"Animation",
+        @35: @"Comedy",
+        @80: @"Crime",
+        @99: @"Documentary",
+        @18: @"Drama",
+        @10751: @"Family",
+        @14: @"Fantasy",
+        @36: @"History",
+        @27: @"Horror",
+        @10402: @"Music",
+        @9648: @"Mystery",
+        @10749: @"Romance",
+        @878: @"Science Fiction",
+        @10770: @"TV Movie",
+        @53: @"Thriller",
+        @10752: @"War",
+        @37: @"Western"
+    };
+}
+
 
 
 /*

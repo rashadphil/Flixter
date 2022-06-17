@@ -13,7 +13,9 @@
         <scene sceneID="Bga-MZ-lKD">
             <objects>
                 <tabBarController id="OPH-th-7dJ" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J7a-9y-gYN">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="J7a-9y-gYN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,28 +35,21 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FlixtrViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="163" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rZE-uY-VSN">
-                                <rect key="frame" x="0.0" y="135" width="414" height="761"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="163" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rZE-uY-VSN">
+                                <rect key="frame" x="0.0" y="175" width="414" height="721"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexColor" red="0.89411764709999997" green="0.90196078430000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" barStyle="black" searchBarStyle="prominent" text="" id="Bxz-ws-QUf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="barTintColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="163" id="gfs-RP-uQk" customClass="MovieTableViewCell">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="163"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gfs-RP-uQk" id="ddk-JW-Ze1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
@@ -66,20 +61,17 @@
                                                         <constraint firstAttribute="height" constant="38" id="zeZ-5L-9NO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" red="0.89411764709999997" green="0.90196078430000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="0.3411764705882353" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aK6-3g-4OD">
-                                                    <rect key="frame" x="15" y="5" width="94" height="138"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aK6-3g-4OD">
+                                                    <rect key="frame" x="15" y="17" width="106" height="135"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="106" id="K5i-5Q-dgN"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO2-1J-bY8">
-                                                    <rect key="frame" x="153" y="51" width="219" height="84"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="257" id="RFS-8J-5Rv"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="153" y="51" width="218" height="84"/>
                                                     <string key="text">Cast. Jared Leto as Dr. Michael Morbius: A scientist suffering from a rare blood disease whose attempts to cure himself afflict him with a form of transgenic vampirism, gaining all of the superhuman abilities but none of the superstitious weaknesses associated with vampires.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" systemColor="systemGray4Color"/>
@@ -89,14 +81,15 @@
                                             <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="vfJ-Ym-emx" firstAttribute="leading" secondItem="MO2-1J-bY8" secondAttribute="leading" id="4uH-CT-27G"/>
-                                                <constraint firstItem="aK6-3g-4OD" firstAttribute="top" secondItem="ddk-JW-Ze1" secondAttribute="topMargin" constant="-6" id="67O-BA-IfX"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="vfJ-Ym-emx" secondAttribute="trailing" constant="-6" id="ByJ-hU-cho"/>
+                                                <constraint firstItem="aK6-3g-4OD" firstAttribute="top" secondItem="ddk-JW-Ze1" secondAttribute="topMargin" constant="6" id="67O-BA-IfX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vfJ-Ym-emx" secondAttribute="trailing" constant="-15" id="ByJ-hU-cho"/>
                                                 <constraint firstItem="aK6-3g-4OD" firstAttribute="bottom" secondItem="ddk-JW-Ze1" secondAttribute="bottomMargin" id="K6s-Wq-dYn"/>
-                                                <constraint firstItem="vfJ-Ym-emx" firstAttribute="leading" secondItem="aK6-3g-4OD" secondAttribute="trailing" constant="8" symbolic="YES" id="Qbh-UI-7gG"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="MO2-1J-bY8" secondAttribute="trailing" constant="4" id="gOi-X7-U5c"/>
+                                                <constraint firstItem="vfJ-Ym-emx" firstAttribute="leading" secondItem="aK6-3g-4OD" secondAttribute="trailing" constant="25" id="Qbh-UI-7gG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MO2-1J-bY8" secondAttribute="trailing" constant="10" id="gOi-X7-U5c"/>
                                                 <constraint firstItem="aK6-3g-4OD" firstAttribute="top" secondItem="vfJ-Ym-emx" secondAttribute="top" id="i0D-TQ-K2U"/>
-                                                <constraint firstItem="MO2-1J-bY8" firstAttribute="top" secondItem="ddk-JW-Ze1" secondAttribute="topMargin" constant="25" id="kWY-t4-2mj"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="MO2-1J-bY8" secondAttribute="bottom" constant="-11" id="lTh-iL-H8b"/>
+                                                <constraint firstItem="aK6-3g-4OD" firstAttribute="leading" secondItem="ddk-JW-Ze1" secondAttribute="leading" constant="15" id="iTM-MU-pcW"/>
+                                                <constraint firstItem="MO2-1J-bY8" firstAttribute="top" secondItem="ddk-JW-Ze1" secondAttribute="topMargin" constant="40" id="kWY-t4-2mj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MO2-1J-bY8" secondAttribute="bottom" constant="15" id="lTh-iL-H8b"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -113,23 +106,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kS-w9-fnT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flixter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMi-RI-7f7">
-                                        <rect key="frame" x="18" y="101" width="87" height="34"/>
+                                        <rect key="frame" x="18" y="75" width="87" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woM-nK-IgE">
-                                        <rect key="frame" x="18" y="81" width="128" height="21"/>
+                                        <rect key="frame" x="18" y="56" width="128" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" red="0.69019607839999997" green="0.70196078429999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <searchBar contentMode="redraw" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" barStyle="black" text="" placeholder="Search Movies" id="Bxz-ws-QUf">
+                                        <rect key="frame" x="0.0" y="109" width="410" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="barTintColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -141,7 +141,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="HJu-cy-oE9" id="fV0-xA-R4h"/>
                         <outlet property="dateLabel" destination="woM-nK-IgE" id="BgS-tm-gEy"/>
-                        <outlet property="searchBar" destination="Bxz-ws-QUf" id="yVx-NR-XH6"/>
+                        <outlet property="searchBar" destination="Bxz-ws-QUf" id="NGA-DL-rqQ"/>
                         <outlet property="tableView" destination="rZE-uY-VSN" id="Kfg-bG-BHi"/>
                     </connections>
                 </viewController>
@@ -154,7 +154,7 @@
             <objects>
                 <viewController id="05r-MV-b8c" customClass="DetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3G-EA-dFO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RI6-gO-lPR">
@@ -184,8 +184,18 @@
                                         <color key="textColor" red="0.69019607839999997" green="0.70196078429999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-4F-nBG">
+                                        <rect key="frame" x="151" y="270" width="97" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="10"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.3411764706" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rp-JK-ubo">
-                                        <rect key="frame" x="138" y="264" width="163" height="31"/>
+                                        <rect key="frame" x="141" y="296" width="153" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="View Trailer"/>
@@ -207,6 +217,7 @@
                     <navigationItem key="navigationItem" id="vTg-46-gz8"/>
                     <connections>
                         <outlet property="headerImage" destination="KtQ-Sa-Jff" id="zqF-7h-1sW"/>
+                        <outlet property="movieGenre" destination="dQg-4F-nBG" id="tuG-5n-jQK"/>
                         <outlet property="movieSynopsis" destination="fzX-77-vEo" id="VDz-TY-Clt"/>
                         <outlet property="movieTitle" destination="6OH-1R-und" id="Ad5-9M-XjH"/>
                         <outlet property="posterImage" destination="dNW-aY-oKG" id="AXz-XD-vby"/>
