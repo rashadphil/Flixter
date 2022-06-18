@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 - [ ] All images fade in as they are loading.
 - [X] User can view the large movie poster by tapping on a cell.
 - [X] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
-- [ ] Customize the selection effect of the cell.
+- [X] Customize the selection effect of the cell.
 - [ ] Customize the navigation bar.
 - [X] Customize the UI.
 - [ ] Run your app on a real device.
@@ -36,21 +36,21 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. I'd like to optimize the data fetching by sharing data between the TableView and CollectionView
+2. I want to extend my app to include star ratings
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/9lh5y4q.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-https://i.imgur.com/9lh5y4q.mp4
-![](https://i.imgur.com/9lh5y4q.mp4)
+https://imgur.com/a/dq8LH50.gif
 GIF created with [Kap](https://getkap.co/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I had challenges with getting the app to run on my iPhone.
 
 ## Credits
 
